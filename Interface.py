@@ -15,7 +15,7 @@ from  PIL import Image, ImageTk
 class MainWindow():
     
     PATH = ''
-    SIGNS = ("Proíbido Retonar a Esquerda", "Duplo Sentido de Circulação", "Proíbido Ultrapassar", "Proibido estacionar")
+    SIGNS = ("Proíbido Retornar a Esquerda", "Duplo Sentido de Circulação", "Proíbido Ultrapassar", "Proibido estacionar")
     POSITION_CAM = ("Horizontal", "Vertical")
     ABOUTRULES = "As Regras defenidas levam em consideração a posição em que a camera está, as placas de trânsito que ele deve considerar e o fluxo do tráfego.\nPara cada uma dessas regras são apresentadas as seguintes opções:\n\nPosição da Câmera: \n- Horizontal\n- Vertical\n\nPlacas de Trânsito: \n- Proíbido Retonar a Esquerda\n- Duplo Sentido de Circulação\n- Proíbido Ultrapassar\n- Proibido estacionar\n\nFluxo do tráfego:\n- Horizontal\n- Vertical"
     
@@ -61,13 +61,13 @@ class MainWindow():
         
         self.label = Label(self.window, text="Definição das Regras")
         self.label.grid(column=0, row=0, sticky=tk.W, padx=5, pady=5)
-        
+        '''
         self.label1 = Label(self.window, text="Posição da câmera")
         self.label1.grid(column=0, row=1, sticky=tk.W, pady=5, padx=5)
         
         self.options1 = OptionMenu(self.window, self.option_Var1, self.POSITION_CAM[0], *self.POSITION_CAM)
         self.options1.grid(column=1, row=1, sticky=tk.W, pady=5, padx=15)
-        
+        '''
         self.label2 = Label(self.window, text="Placas de Trânsito")
         self.label2.grid(column=0, row=2, sticky=tk.W, pady=5, padx=5)
         
